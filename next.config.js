@@ -21,8 +21,8 @@ module.exports = (phase, { defaultConfig }) => {
   return {
     /* config options for all phases except development here */
     reactStrictMode: true,
-    // assetPrefix: "/out", //static assets are in the /out folder
-    // basePath: "/",
+    assetPrefix: "/MWS_NextJS_ISR_SSG", //static assets are in the /out folder
+    basePath: "/MWS_NextJS_ISR_SSG",
     experimental: {
       images: {
         unoptimized: true,
