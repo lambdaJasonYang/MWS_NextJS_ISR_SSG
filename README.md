@@ -14,7 +14,7 @@ http://localhost:3000/out/ship/1
 npm run export
 ```
 
-* Warn: Make sure not to open liveserver on a workspace but directly in the nextjs folder.
+* Warn: Make sure not to open liveserver on a workspace but directly in the nextjs **/out** folder NOT simply just the nextjs root folder. It's a real pain testing the exported static site bc you now have to open the out folder then start live server unlike SSR which can be ran on nextjs root folder thru terminal.
 
 http://localhost:5500/out/ship/1.html
 
@@ -23,9 +23,9 @@ http://localhost:5500/out/ship/1.html
 Observe the difference between URL links.
 
 * link:
-  * Server: http://localhost:3000/out/ship/1 
-  * SSG export: http://localhost:5500/out/ship/1.html
+  * Server: http://localhost:3000/ship/1 
+  * SSG export: http://localhost:5500/ship/1.html
 <!--  -->
 * Dynamic routes not available for SSG
-  * Server: http://localhost:3000/out/ship/99999
-  * SSG export: ERROR! http://localhost:3000/out/ship/99999.html
+  * Server: http://localhost:3000/ship/99999
+  * SSG export: ERROR! http://localhost:3000/ship/99999.html
