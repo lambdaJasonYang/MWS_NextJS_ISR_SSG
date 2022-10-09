@@ -1,3 +1,5 @@
+MUST change .env content `myEnv` when running locally because it affects the `assetPrefix`, `basePath` in next.config.js. When `myEnv=prod`, the repo name "/MWS_NextJS_ISR_SSG" gets appended to url links which allows the github pages to function.
+
 # SSR
 
 ```bash
